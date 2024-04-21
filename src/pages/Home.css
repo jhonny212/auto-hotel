@@ -1,0 +1,25 @@
+/* grid-cols-2 */
+
+.hours{
+    grid-area: hours;
+}
+
+.days{
+    grid-area: days;
+}
+
+.location{
+    grid-area: location;
+}
+
+.info{
+    display: grid;
+    grid-template-areas: 
+    "hours days"
+    "location"
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+     /* md:grid-cols-3 md:grid-rows-2
+      */
+}

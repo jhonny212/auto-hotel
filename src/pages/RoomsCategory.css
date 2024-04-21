@@ -1,0 +1,21 @@
+
+  
+  .boton-ver-mas {
+    position: relative;
+    bottom: 60px;
+    left: 10px; /* Ajusta la distancia desde la parte derecha de la imagen */
+    
+    padding: 5px 10px;
+    background-color: rgb(223, 223, 223); /* Color de fondo del botón */
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 180px;
+    opacity: 0.7;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton-ver-mas:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Color de fondo del botón al pasar el ratón por encima */
+  }
+  

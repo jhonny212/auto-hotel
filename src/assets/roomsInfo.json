@@ -1,0 +1,163 @@
+{
+    "basic": [
+        {
+            "name": "Habitación 3",
+            "main": "IMG_3301.jpeg",
+            "path": "basic/Habitación_3",
+            "price": 90,
+            "code": 3,
+            "images": [
+                "Frente.jpg",
+                "IMG_3298.jpeg",
+                "IMG_3301.jpeg",
+                "IMG_3302.jpeg",
+                "IMG_3304.jpeg"
+            ]
+        },
+        {
+            "name": "Habitación 7",
+            "main": "1711669245305.jpg",
+            "path": "basic/Habitación_7",
+            "price": 85,
+            "code": 7,
+            "images": [
+                "frente 7.jpg",
+                "1711669245257.jpg",
+                "1711669245270.jpg",
+                "1711669245285.jpg",
+                "1711669245305.jpg"
+            ]
+        },
+        {
+            "name": "Habitación 8",
+            "main": "IMG_3334.jpeg",
+            "path": "basic/Habitación_8",
+            "price": 90,
+            "code": 8,
+            "images": [
+                "Frente 8.jpg",
+                "IMG_3330.jpeg",
+                "IMG_3334.jpeg",
+                "IMG_3337.jpeg",
+                "IMG_3339.jpeg"
+            ]
+        }
+    ],
+    "premium": [
+        {
+            "name": "Habitación 4",
+            "main": "IMG_3310.jpeg",
+            "path": "premium/Habitación_4",
+            "price": 225,
+            "code": 4,
+            "images": [
+                "frente 4 mejorado.png",
+                "IMG_3317.jpeg",
+                "IMG_3315.jpeg",
+                "IMG_3310.jpeg"
+            ]
+        },
+        {
+            "name": "Habitación 10",
+            "main": "IMG_3349.jpeg",
+            "path": "premium/Habitación_10",
+            "price": 150,
+            "code": 10,
+            "images": [
+                "1711669798790.jpg",
+                "IMG_3349.jpeg",
+                "IMG_3350.jpeg",
+                "IMG_3353.jpeg",
+                "IMG_3354.jpeg"
+            ]
+        },
+        {
+            "name": "Habitación 12",
+            "main": "1711667787037.jpg",
+            "path": "premium/Habitación_12",
+            "price": 150,
+            "code": 12,
+            "images":[
+                "1711667787004.jpg",
+                "1711667787016.jpg",
+                "1711667787021.jpg",
+                "1711667787037.jpg",
+                "1711667787043.jpg"
+            ]
+        }
+    ],
+    "semi_premium": [
+        {
+            "name": "Habitación 1",
+            "main": "IMG_3281.jpeg",
+            "path": "semi_premium/Habitación_1",
+            "price": 100,
+            "code": 1,
+            "images":[
+                "1.jpg",
+                "IMG_3281.jpeg",
+                "IMG_3285.jpeg",
+                "IMG_3287.jpeg",
+                "IMG_3288.jpeg",
+                "IMG_3295.jpeg"
+            ]
+        },
+        {
+            "name": "Habitación 2",
+            "main": "_MRM0082.jpg",
+            "path": "semi_premium/Habitación_2",
+            "price": 100,
+            "code": 2,
+            "images": [
+                "_MRM0082.jpg",
+                "Frente 2.jpg",
+                "Mejor.png"
+            ]
+        },
+        {
+            "name": "Habitación 5",
+            "main": "IMG_3321.jpeg",
+            "path": "semi_premium/Habitación_5",
+            "price": 100,
+            "code": 5,
+            "images": [
+                "IMG_3318.jpeg",
+                "IMG_3321.jpeg",
+                "IMG_3323.jpeg",
+                "IMG_3325.jpeg",
+                "IMG_3328.jpeg"
+            ]
+        },
+        {
+            "name": "Habitación 6",
+            "main": "1711667606501.jpg",
+            "path": "semi_premium/Habitación_6",
+            "price": 100,
+            "code": 6,
+            "images": [
+                "1711667606472.jpg",
+                "1711667606501.jpg",
+                "1711667606508.jpg",
+                "Frente 6.jpg",
+                "IMG_3367.jpeg"
+            ]
+        },
+        {
+            "name": "Habitación 9",
+            "main": "IMG_3342.jpeg",
+            "path": "semi_premium/Habitación_9",
+            "price": 100,
+            "code": 9,
+            "images": [
+                "1711672951234.jpg"
+            ]
+        },
+        {
+            "name": "Habitación 11",
+            "main": "IMG_3358.jpeg",
+            "path": "semi_premium/Habitación_11",
+            "price": 100,
+            "code": 11
+        }
+    ]
+}
