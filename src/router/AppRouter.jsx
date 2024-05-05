@@ -16,10 +16,10 @@ export const AppRouter = () => {
             minHeight: '100vh'
         }}>
             <Routes>
-                <Route path="auto-hotel/rooms" element={<AllRooms />} />
-                <Route path="auto-hotel/rooms/:type" element={<RoomsByCategory  />} />
-                <Route path="auto-hotel/rooms/:type/:id" element={<Room />} />
-                <Route path="auto-hotel" element={<Home />} />
+                <Route path="rooms" element={<AllRooms />} />
+                <Route path="rooms/:type" element={<RoomsByCategory  />} />
+                <Route path="rooms/:type/:id" element={<Room />} />
+                <Route path="" element={<Home />} />
             </Routes>
         </div>
 
