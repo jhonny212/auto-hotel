@@ -33,17 +33,17 @@ export const RoomsByCategory = () => {
 
     return <>
         <div id='header-title' className='text-center mt-10'>
-            <h1 className="text-5xl font-extrabold text-gray-100">Habitaciones</h1>
+            <h1 className="text-5xl font-extrabold text-gray-800">Habitaciones</h1>
         </div>
 
         {info[type].map(({ name, main, path, price, code }) => {
             return <> <div className='flex justify-center items-center contenedor-imagen'>
                 <div className={`my-10 mx-5 w-full md:m-10 md:w-9/12 `}>
-                    <h2 className="mt-5 text-3xl text-center mb-5 font-extrabold text-gray-100">{name}</h2>
-                    <h3 className="text-2xl text-center mb-5 font-extrabold text-gray-200">Precio: Q{price}</h3>
+                    <h2 className="mt-5 text-3xl text-center mb-5 font-extrabold text-gray-800">{name}</h2>
+                    <h3 className="text-2xl text-center mb-5 font-extrabold text-gray-800">Precio: Q{price}</h3>
                     <Link to={"" + code}>
-                        <img src={`/auto-hotel/src/assets/${path}/${main}`} className="" alt="..." />
-                        <a href="#" class="boton-ver-mas flex justify-center items-center">
+                        <img src={`/src/assets/${path}/${main}`} className="" alt="..." />
+                        <a href="#" className="boton-ver-mas flex justify-center items-center">
                             Ver fotos <FontAwesomeIcon  className="pl-2" size='2x' color='black' icon={faArrowRight} />
                         </a>
                     </Link>

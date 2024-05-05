@@ -12,7 +12,7 @@ export const Room = () => {
     const { type, id } = useParams();
 
     useEffect(() => {
-      const rootPath = `/auto-hotel/src/assets/${type}/Habitación_${id}/`
+      const rootPath = `/src/assets/${type}/Habitación_${id}/`
       const selectedRoom = info[type].filter(e=>e.code == id )[0]
       console.log(selectedRoom?.images?.map(e=>{return rootPath+e}));
       console.log(selectedRoom);
@@ -23,8 +23,8 @@ export const Room = () => {
     
     return <>
         <div id='header-title' className='text-center mt-10'>
-            <h1 className="text-5xl font-extrabold text-gray-100">Habitacion #{id} </h1>
-            <h2 className="mt-5 text-3xl font-extrabold text-gray-100">Fotos de la habitacion</h2>
+            <h1 className="text-5xl font-extrabold text-gray-800">Habitacion #{id} </h1>
+            <h2 className="mt-5 text-3xl font-extrabold text-gray-800">Fotos de la habitacion</h2>
         </div>
 
         <div className='flex items-center justify-center'>

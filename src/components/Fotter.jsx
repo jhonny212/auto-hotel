@@ -38,7 +38,9 @@ export const Fotter = () => {
                         <ul className='text-gray-500 dark:text-gray-400 font-medium border-t-2 border-gray-500 pt-5'>
                             <li className='pt-1'>
                                 <FontAwesomeIcon size='2x' color='white' icon={faWhatsapp} />
-                                <span className='ml-2'>777 555 222</span>
+                                <span className='ml-2'>
+                                <a href="https://wa.me/50248441018?text=Deseo reservar!">+502 48441018</a>
+                                </span>
                             </li>
                             <li className='pt-1'>
                                 <FontAwesomeIcon size='2x' color='white' icon={faLocationDot} />

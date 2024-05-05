@@ -22,7 +22,7 @@ export const Home = () => {
 
             <section className='mt-5 px-10'>
                 <div id='header-title' className='text-center'>
-                    <h1 className="text-3xl lg:text-5xl font-extrabold text-gray-100">AUTO HOTEL MOMENTOS MAGICOS</h1>
+                    <h1 className="text-3xl lg:text-5xl font-extrabold text-gray-800">AUTO HOTEL MOMENTOS MAGICOS</h1>
                 </div>
             </section>
 
@@ -35,7 +35,7 @@ export const Home = () => {
             <div id='schedule' className='mt-5 mb-5'>
 
                 <div className="info grid gap-3 mx-10 mt-10 grid-cols-2 items-start justify-center text-center">
-                    <div className='hours p-2 h-full items-center justify-center bg-gray-500'>
+                    <div className='hours p-2 h-full items-center justify-center bg-[#FF9045]'>
                         <h2 className="lg:text-4xl text-2xl mb-2  font-semibold text-gray-100">Atención</h2>
                         <ul className="space-y-4 text-lg flex items-center justify-center text-gray-200">
                             <li className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -45,7 +45,7 @@ export const Home = () => {
                     </div>
 
 
-                    <div className='location p-2 items-center justify-center bg-gray-500'>
+                    <div className='location p-2 items-center justify-center bg-[#FF9045]'>
                         <h2 className="lg:text-4xl text-2xl mb-2 font-semibold text-gray-100">Ubicación</h2>
                         <ul className="space-y-4 text-lg  flex items-center justify-center text-gray-200">
                             <li className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -171,47 +171,9 @@ export const Home = () => {
                                 href="rooms/basic">Ver habitaciónes económica</a>
                         </div>
                     </div>
-
-                    {/* <div className='button flex items-center justify-center'>
-                        <button type="button"
-                            className={
-                                `text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4
-                                    focus:ring-gray-300 rounded-lg dark:bg-gray-800 
-                                    dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700
-                                    font-medium  px-4 py-2.5 me-2 mb-2
-                                    `
-                            }
-                        >
-                            <a href="rooms/premium">Habitación premium <FontAwesomeIcon size='2xs' color='white' icon={faArrowRight} /></a>
-                        </button>
-                    </div>
-
-                    <div className='button flex items-center justify-center'>
-                        <button type="button"
-                            className={
-                                `text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4
-                                    focus:ring-gray-300 font-medium rounded-lg px-4 py-2.5 me-2 mb-2 dark:bg-gray-800 
-                                    dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700`
-                            }
-                        >
-                            <a href="rooms/semi_premium">Habitación semi premium <FontAwesomeIcon size='2xs' color='white' icon={faArrowRight} /></a>
-                        </button>
-                    </div>
-
-                    <div className='button flex items-center justify-center'>
-                        <button type="button"
-                            className={
-                                `text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4
-                                    focus:ring-gray-300 font-medium rounded-lg px-4 py-2.5 me-2 mb-2 dark:bg-gray-800 
-                                    dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700`
-                            }
-                        >
-                            <a href="rooms/basic">Habitación basica <FontAwesomeIcon size='2xs' color='white' icon={faArrowRight} /></a>
-                        </button>
-                    </div> */}
                 </div>
 
-                <div className='maps lg:p-5 mb-5 mx-10 h-[400px] md:h-[600px]  '>
+                <div className='maps lg:p-5 mb-5 mx-10 h-[400px] md:h-[600px]  shadow-2xl'>
                     <a href={`https://www.google.com/maps?q=${15.0327380},${-91.0291750}`}>
                         <MapComponent lat={15.0327380} long={-91.0291750} />
                     </a>
