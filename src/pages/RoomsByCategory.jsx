@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { Carousel } from '../components/Carousel'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { Link, useParams } from 'react-router-dom'
@@ -13,7 +12,7 @@ export const RoomsByCategory = () => {
     const [images, setImages] = useState([])
     const [selectedRoom, setSelectedRoom] = useState(0)
     const [detailRoom, setDetailRoom] = useState([])
-    const host = window.location.host;
+    const [principalImage, setPrincipalImage] = useState()
 
     useEffect(() => {
         let rooms = []
@@ -30,6 +29,7 @@ export const RoomsByCategory = () => {
         setSelectedRoom(total)
     }
 
+    
 
     return <>
         <div id='header-title' className='text-center mt-10'>
@@ -42,7 +42,8 @@ export const RoomsByCategory = () => {
                     <h2 className="mt-5 text-3xl text-center mb-5 font-extrabold text-gray-800">{name}</h2>
                     <h3 className="text-2xl text-center mb-5 font-extrabold text-gray-800">Precio: Q{price}</h3>
                     <Link to={"" + code}>
-                        <img src={`/src/assets/${path}/${main}`} className="" alt="..." />
+                        
+                        <img src={`../assets/${path}/${main}`} className="" alt="..." />
                         <a href="#" className="boton-ver-mas flex justify-center items-center">
                             Ver fotos <FontAwesomeIcon  className="pl-2" size='2x' color='black' icon={faArrowRight} />
                         </a>

@@ -11,20 +11,17 @@ export const Room = () => {
     const [images, setImages] = useState([])
     const { type, id } = useParams();
 
-
-
     useEffect(() => {
-        // const rootPath = `../assets/${type}/Habitación_${id}/`
-        // const selectedRoom = info[type].filter(e => e.code == id)[0]
-        // setImages(selectedRoom?.images?.map(e => { return rootPath + e }))
-        const img = import(`../assets/${type}/Habitación_${id}/IMG_3310.jpeg`)
-        img.then(e=>{
-            setImages([e.default])
+        const selectedRoom = info[type].filter(e => e.code == id)[0]
+        const newImages = selectedRoom?.images?.map(async (e) => {
+            const url = `../assets/${type}/Habitación_${id}/${e}`
+            return import(url)
         })
-        
-        // img.then((i)=>{
-        //     setImages([i])
-        // })
+        const result = Promise.all(newImages)
+        result.then((e) => {
+            const tmp = e.map(e => e.default)
+            setImages(tmp)
+        })
     }, [])
 
 
