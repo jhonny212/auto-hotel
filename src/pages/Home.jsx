@@ -10,8 +10,6 @@ import room4 from '../assets/Frente/_MRM0041.png'
 import room5 from '../assets/Frente/_MRM0043.png'
 import room6 from '../assets/Frente/_MRM0045.png'
 import room7 from '../assets/Frente/_MRM0103.png'
-
-
   
 
 export const Home = () => {
@@ -66,8 +64,8 @@ export const Home = () => {
                     <div className='bg-yellow-400 text-center m-5 shadow-2xl'>
                         <FontAwesomeIcon size='2x' color='text-gray-100' className='mt-5' icon={faGem} />
                         <div className='text-3xl'>
-                            <h2 class="font-semibold mb-5">Habitaciones de lujo:</h2>
-                            <ul class="text-2xl">
+                            <h2 className="font-semibold mb-5">Habitaciones de lujo:</h2>
+                            <ul className="text-2xl">
                                 <li>
                                     Habitacion 4
                                 </li>
@@ -100,8 +98,8 @@ export const Home = () => {
                     <div className='bg-yellow-400 text-center m-5 shadow-2xl'>
                         <FontAwesomeIcon size='2x' color='text-gray-100' className='mt-5' icon={faStar} />
                         <div className='text-3xl'>
-                            <h2 class="font-semibold mb-5">Habitaciones estándar:</h2>
-                            <ul class="text-2xl">
+                            <h2 className="font-semibold mb-5">Habitaciones estándar:</h2>
+                            <ul className="text-2xl">
                                 <li>
                                     Habitacion 1
                                 </li>
@@ -143,8 +141,8 @@ export const Home = () => {
                     <div className='bg-yellow-400 text-center m-5 shadow-2xl' >
                         <FontAwesomeIcon size='2x' color='text-gray-100' className='mt-5' icon={faCoins} />
                         <div className='text-3xl'>
-                            <h2 class="font-semibold mb-5">Habitaciones económica:</h2>
-                            <ul class="text-2xl">
+                            <h2 className="font-semibold mb-5">Habitaciones económica:</h2>
+                            <ul className="text-2xl">
                                 <li>
                                     Habitacion 3
                                 </li>

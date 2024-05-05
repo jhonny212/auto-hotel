@@ -11,16 +11,23 @@ export const Room = () => {
     const [images, setImages] = useState([])
     const { type, id } = useParams();
 
-    useEffect(() => {
-      const rootPath = `/src/assets/${type}/Habitación_${id}/`
-      const selectedRoom = info[type].filter(e=>e.code == id )[0]
-      console.log(selectedRoom?.images?.map(e=>{return rootPath+e}));
-      console.log(selectedRoom);
 
-      setImages(selectedRoom?.images?.map(e=>{return rootPath+e}))
+
+    useEffect(() => {
+        // const rootPath = `../assets/${type}/Habitación_${id}/`
+        // const selectedRoom = info[type].filter(e => e.code == id)[0]
+        // setImages(selectedRoom?.images?.map(e => { return rootPath + e }))
+        const img = import(`../assets/${type}/Habitación_${id}/IMG_3310.jpeg`)
+        img.then(e=>{
+            setImages([e.default])
+        })
+        
+        // img.then((i)=>{
+        //     setImages([i])
+        // })
     }, [])
-    
-    
+
+
     return <>
         <div id='header-title' className='text-center mt-10'>
             <h1 className="text-5xl font-extrabold text-gray-800">Habitacion #{id} </h1>
@@ -29,7 +36,7 @@ export const Room = () => {
 
         <div className='flex items-center justify-center'>
             <div id='root-container-carousel' className='mt-5 md:m-10 w-full  xl:w-5/12 lg:w-6/12 2xl:w-7/12'>
-                <Carousel className='h-[300px] md:h-[400px] xl:h-[520px] lg:h-[400px] 2xl:h-[600px]'images={images} redirectImage={false} />
+                <Carousel className='h-[300px] md:h-[400px] xl:h-[520px] lg:h-[400px] 2xl:h-[600px]' images={images} redirectImage={false} />
             </div>
         </div>
 

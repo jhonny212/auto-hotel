@@ -9,11 +9,11 @@ export const DropDown = () => {
     const [active, setActive] = useState(false)
 
     return <>
-        <div class="dropdown grid grid-cols-3 bg-gray-100 shadow-2xl" onClick={() => { setActive(!active) }}>
+        <div className="dropdown grid grid-cols-3 bg-gray-100 shadow-2xl" onClick={() => { setActive(!active) }}>
             <span className='cursor-pointer'>
                 <FontAwesomeIcon size='2x' color='black' icon={active ? faClose : faBars} />
             </span>
-            <div class={`dropdown-content w-[200px] md:w-[500px] text-start`} style={{
+            <div className={`dropdown-content w-[200px] md:w-[500px] text-start`} style={{
                 display: `${active ? 'block' : 'none'}`,
             }}>
                 <p className='border-b-2 pt-5 pb-2'>
