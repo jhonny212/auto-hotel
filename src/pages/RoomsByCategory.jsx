@@ -43,7 +43,7 @@ export const RoomsByCategory = () => {
                     <h3 className="text-2xl text-center mb-5 font-extrabold text-gray-800">Precio: Q{price}</h3>
                     <Link to={"" + code}>
                         
-                        <img src={`../assets/${path}/${main}`} className="" alt="..." />
+                        <img src={`/assets/${path}/${main}`} className="" alt="..." />
                         <a href="#" className="boton-ver-mas flex justify-center items-center">
                             Ver fotos <FontAwesomeIcon  className="pl-2" size='2x' color='black' icon={faArrowRight} />
                         </a>
