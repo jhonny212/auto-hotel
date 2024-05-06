@@ -17,13 +17,13 @@ export const DropDown = () => {
                 display: `${active ? 'block' : 'none'}`,
             }}>
                 <p className='border-b-2 pt-5 pb-2'>
-                    <Link to="/auto-hotel">
+                    <Link to="/">
                         INICIO
                     </Link>
                 </p>
 
                 <p className='border-b-2 pt-5 pb-2'>
-                    <a href="/auto-hotel/#section-rooms" className='cursor-pointer'>
+                    <a href="/#section-rooms" className='cursor-pointer'>
                         HABITACIONES
                     </a>
                 </p>

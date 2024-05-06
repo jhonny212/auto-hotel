@@ -34,7 +34,7 @@ export const Home = () => {
             <div id='schedule' className='mt-5 mb-5'>
 
                 <div className="info grid gap-3 mx-10 mt-10 grid-cols-2 items-start justify-center text-center">
-                    <div className='hours p-2 h-full items-center justify-center bg-orange-500 shadow-2xl'>
+                    <div className='hours p-2 h-full items-center justify-center bg-[#D6656F] shadow-2xl'>
                         <h2 className="lg:text-4xl text-2xl my-2  font-semibold text-white">Atención</h2>
                         <ul className="space-y-4 text-lg flex items-center justify-center text-white">
                             <li className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -44,7 +44,7 @@ export const Home = () => {
                     </div>
 
 
-                    <div className='location p-2 items-center justify-center bg-orange-500 shadow-2xl'>
+                    <div className='location p-2 items-center justify-center bg-[#D6656F] shadow-2xl'>
                         <h2 className="lg:text-4xl text-2xl my-2 font-semibold text-white">Ubicación</h2>
                         <ul className="space-y-4 text-lg  flex items-center justify-center text-white">
                             <li className="flex items-center space-x-3 rtl:space-x-reverse">

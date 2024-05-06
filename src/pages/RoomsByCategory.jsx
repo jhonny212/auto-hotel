@@ -10,19 +10,18 @@ export const RoomsByCategory = () => {
 
     const { type } = useParams();
     const [images, setImages] = useState([])
-    const [selectedRoom, setSelectedRoom] = useState(0)
-    const [detailRoom, setDetailRoom] = useState([])
-    const [principalImage, setPrincipalImage] = useState()
+   
 
     useEffect(() => {
-        let rooms = []
-        let newImages = []
-        info[type].forEach(({ main, name, path, price, code }) => {
-            rooms.push({ name, price, code, path })
-            newImages.push(`/auto-hotel/src/assets/${path}/${main}`)
+        const newImages = info[type]?.map(async (e) => {
+            const url = `../assets/${e.path}/${e.main}`
+            return import(url)
         })
-        setDetailRoom(rooms)
-        setImages(newImages)
+        const result = Promise.all(newImages)
+        result.then((e) => {
+            const tmp = e.map(e => e.default)
+            setImages(tmp)
+        })
     }, [])
 
     function onChangeImage(total) {
@@ -36,14 +35,14 @@ export const RoomsByCategory = () => {
             <h1 className="text-5xl font-extrabold text-gray-800">Habitaciones</h1>
         </div>
 
-        {info[type].map(({ name, main, path, price, code }) => {
+        {info[type].map(({ name, main, path, price, code },index) => {
             return <> <div className='flex justify-center items-center contenedor-imagen'>
                 <div className={`my-10 mx-5 w-full md:m-10 md:w-9/12 `}>
                     <h2 className="mt-5 text-3xl text-center mb-5 font-extrabold text-gray-800">{name}</h2>
                     <h3 className="text-2xl text-center mb-5 font-extrabold text-gray-800">Precio: Q{price}</h3>
                     <Link to={"" + code}>
                         
-                        <img src={`/assets/${path}/${main}`} className="" alt="..." />
+                        <img src={images[index]} className="" alt="..." />
                         <a href="#" className="boton-ver-mas flex justify-center items-center">
                             Ver fotos <FontAwesomeIcon  className="pl-2" size='2x' color='black' icon={faArrowRight} />
                         </a>
