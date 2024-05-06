@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {  faLocationDot, faClock, faBed, faGem, faCoins, faStar } from '@fortawesome/free-solid-svg-icons'
+import { faLocationDot, faClock, faBed, faGem, faCoins, faStar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Carousel } from '../components/Carousel'
 import { MapComponent } from '../components/MapComponent'
@@ -10,11 +10,11 @@ import room4 from '../assets/Frente/_MRM0041.png'
 import room5 from '../assets/Frente/_MRM0043.png'
 import room6 from '../assets/Frente/_MRM0045.png'
 import room7 from '../assets/Frente/_MRM0103.png'
-  
+
 
 export const Home = () => {
     const [images, setImages] = useState([room1, room3, room4, room5, room2, room6, room7])
-    
+
     return <>
         <div className='w-full'>
 
@@ -34,24 +34,30 @@ export const Home = () => {
             <div id='schedule' className='mt-5 mb-5'>
 
                 <div className="info grid gap-3 mx-10 mt-10 grid-cols-2 items-start justify-center text-center">
-                    <div className='hours p-2 h-full items-center justify-center bg-[#D6656F] shadow-2xl'>
-                        <h2 className="lg:text-5xl text-4xl my-2  font-semibold text-white">Atención</h2>
-                        <ul className="space-y-4 text-lg flex items-center justify-center text-white">
-                            <li className="flex text-2xl items-center space-x-3 rtl:space-x-reverse">
-                                <span>Todos los dias las 24 horas</span>
-                            </li>
-                        </ul>
+                    <div className='hours p-2 h-full flex items-center justify-center bg-[#D6656F] shadow-2xl'>
+                        <div>
+                            <h2 className="lg:text-5xl text-4xl font-semibold text-white">Atención</h2>
+                            <ul className="space-y-4 text-lg flex items-center justify-center text-white">
+                                <li className="flex text-2xl items-center space-x-3 rtl:space-x-reverse">
+                                    <span>Todos los dias las 24 horas</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
 
-                    <div className='location p-2 items-center justify-center bg-[#D6656F] shadow-2xl'>
+                    <div className='location p-2 flex items-center justify-center bg-[#D6656F] shadow-2xl'>
+                        <div>
                         <h2 className="lg:text-5xl text-4xl my-2 font-semibold text-white">Ubicación</h2>
                         <ul className="space-y-4 text-lg  flex items-center justify-center text-white">
                             <li className="flex text-2xl items-center space-x-3 rtl:space-x-reverse">
+                                <a href={`https://www.google.com/maps?q=${15.0327380},${-91.0291750}`}>
                                 <span>Chinique las flores santa cruz del Quiche
                                     en la entrada de potrero viejo Kilómetro 181</span>
+                                </a>
                             </li>
                         </ul>
+                        </div>
                     </div>
 
 
