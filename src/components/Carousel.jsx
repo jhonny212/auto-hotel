@@ -38,13 +38,13 @@ export const Carousel = ({ className = "h-56 md:h-96", onchangeImage, images, re
             selectedClass = defaultCLass
         }
         return <>
-            <div className={selectedClass} data-carousel-item="">
+            <div key={i+"div"} className={selectedClass} data-carousel-item="">
 
-                {redirectImage && <Link to="1">
-                    <img src={img} className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+                {redirectImage && <Link key={i+"link"} to="1">
+                    <img key={i+"img"} src={img} className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
                 </Link>}
 
-                {!redirectImage && <img src={img} className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />}
+                {!redirectImage && <img key={i+"img"} src={img} className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />}
 
             </div>
         </>
@@ -63,7 +63,7 @@ export const Carousel = ({ className = "h-56 md:h-96", onchangeImage, images, re
             {/* <!-- Slider indicators --> */}
             <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
                 {images?.map((img, i) => {
-                    return <button 
+                    return <button key={i}
                         onClick={()=>{
                             moveSpecific(i)
                         }}
