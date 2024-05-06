@@ -13,15 +13,15 @@ export const RoomsByCategory = () => {
    
 
     useEffect(() => {
-        const newImages = info[type]?.map(async (e) => {
-            const url = `../assets/${e.path}/${e.main}`
-            return import(url)
-        })
-        const result = Promise.all(newImages)
-        result.then((e) => {
-            const tmp = e.map(e => e.default)
-            setImages(tmp)
-        })
+        // const newImages = info[type]?.map(async (e) => {
+        //     const url = `../assets/${e.path}/${e.main}`
+        //     return import(url)
+        // })
+        // const result = Promise.all(newImages)
+        // result.then((e) => {
+        //     const tmp = e.map(e => e.default)
+        //     setImages(tmp)
+        // })
     }, [])
 
     function onChangeImage(total) {
@@ -42,7 +42,7 @@ export const RoomsByCategory = () => {
                     <h3 className="text-2xl text-center mb-5 font-extrabold text-gray-800">Precio: Q{price}</h3>
                     <Link to={"" + code}>
                         
-                        <img src={images[index]} className="" alt="..." />
+                        <img src={""} className="" alt="..." />
                         <a href="#" className="boton-ver-mas flex justify-center items-center">
                             Ver fotos <FontAwesomeIcon  className="pl-2" size='2x' color='black' icon={faArrowRight} />
                         </a>
