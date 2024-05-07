@@ -135,10 +135,10 @@
             "price": 100,
             "code": 6,
             "images": [
+                "Frente 6.jpg",
                 "1711667606472.jpg",
                 "1711667606501.jpg",
                 "1711667606508.jpg",
-                "Frente 6.jpg",
                 "IMG_3367.jpeg"
             ]
         },
@@ -149,7 +149,11 @@
             "price": 100,
             "code": 9,
             "images": [
-                "1711672951234.jpg"
+                "1711672951234.jpg",
+                "IMG_3341.jpeg",
+                "IMG_3342.jpeg",
+                "IMG_3344.jpeg",
+                "IMG_3345.jpeg"
             ]
         },
         {
@@ -157,7 +161,14 @@
             "main": "IMG_3358.jpeg",
             "path": "semi_premium/Habitación_11",
             "price": 100,
-            "code": 11
+            "code": 11,
+            "images": [
+                "1711672164300.jpg",
+                "IMG_3356.jpeg",
+                "IMG_3358.jpeg",
+                "IMG_3359.jpeg",
+                "IMG_3361.jpeg"
+            ]
         }
     ]
 }

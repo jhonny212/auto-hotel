@@ -36,7 +36,7 @@ export const Home = () => {
                 <div className="info grid gap-3 mx-10 mt-10 grid-cols-2 items-start justify-center text-center">
                     <div className='hours p-2 h-full flex items-center justify-center bg-[#D6656F] shadow-2xl'>
                         <div>
-                            <h2 className="lg:text-5xl text-4xl font-semibold text-white">Atención</h2>
+                            <h2 className="lg:text-5xl text-3xl font-semibold text-white">Atención</h2>
                             <ul className="space-y-4 text-lg flex items-center justify-center text-white">
                                 <li className="flex text-2xl items-center space-x-3 rtl:space-x-reverse">
                                     <span>Todos los dias las 24 horas</span>
@@ -48,7 +48,7 @@ export const Home = () => {
 
                     <div className='location p-2 flex items-center justify-center bg-[#D6656F] shadow-2xl'>
                         <div>
-                        <h2 className="lg:text-5xl text-4xl my-2 font-semibold text-white">Ubicación</h2>
+                        <h2 className="lg:text-5xl text-3xl my-2 font-semibold text-white">Ubicación</h2>
                         <ul className="space-y-4 text-lg  flex items-center justify-center text-white">
                             <li className="flex text-2xl items-center space-x-3 rtl:space-x-reverse">
                                 <a href={`https://www.google.com/maps?q=${15.0327380},${-91.0291750}`}>
@@ -93,7 +93,7 @@ export const Home = () => {
                         <div className='h-[80px] mt-10 mb-0' id='section-rooms'>
                             <a className={`text-white  border-[2px] border-white
                              focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium 
-                             rounded-lg text-sm px-5 py-2.5 text-center  bg-[#FF9045]
+                             rounded-lg text-sm px-5 py-2.5 text-center  bg-[#D6656F]
                              hover:bg-black
                              hover:border-black
                             `}
@@ -136,7 +136,7 @@ export const Home = () => {
                         <div className='h-[80px] mt-10 mb-0'>
                             <a className={`text-white  border-[2px] border-white
                              focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium 
-                             rounded-lg text-sm px-5 py-2.5 text-center  bg-[#FF9045]
+                             rounded-lg text-sm px-5 py-2.5 text-center  bg-[#D6656F]
                              hover:bg-black
                              hover:border-black
                             `}
@@ -169,7 +169,7 @@ export const Home = () => {
                         <div className='h-[80px] mt-10 mb-0'>
                             <a className={`text-white  border-[2px] border-white
                              focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium 
-                             rounded-lg text-sm px-5 py-2.5 text-center  bg-[#FF9045]
+                             rounded-lg text-sm px-5 py-2.5 text-center  bg-[#D6656F]
                              hover:bg-black
                              hover:border-black
                             `}

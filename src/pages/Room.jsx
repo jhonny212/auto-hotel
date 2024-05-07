@@ -13,15 +13,10 @@ export const Room = () => {
 
     useEffect(() => {
         const selectedRoom = info[type].filter(e => e.code == id)[0]
-        const newImages = selectedRoom?.images?.map(async (e) => {
-            const url = `../assets/${type}/Habitación_${id}/${e}`
-            return import(url)
+        const newImages = selectedRoom?.images?.map((e) => {
+            return `/${type}/Habitación_${id}/${e}`
         })
-        const result = Promise.all(newImages)
-        result.then((e) => {
-            const tmp = e.map(e => e.default)
-            setImages(tmp)
-        })
+        setImages(newImages)
     }, [])
 
 
