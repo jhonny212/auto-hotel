@@ -17,5 +17,6 @@
   
   .boton-ver-mas:hover {
     background-color: rgba(0, 0, 0, 0.7); /* Color de fondo del botón al pasar el ratón por encima */
+    color: white;
   }
   

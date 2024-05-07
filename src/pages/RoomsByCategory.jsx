@@ -9,27 +9,7 @@ import './RoomsCategory.css'
 export const RoomsByCategory = () => {
 
     const { type } = useParams();
-    const [images, setImages] = useState([])
-   
 
-    useEffect(() => {
-        // const newImages = info[type]?.map(async (e) => {
-        //     const url = `../assets/${e.path}/${e.main}`
-        //     return import(url)
-        // })
-        // const result = Promise.all(newImages)
-        // result.then((e) => {
-        //     const tmp = e.map(e => e.default)
-        //     setImages(tmp)
-        // })
-        
-    }, [])
-
-    function onChangeImage(total) {
-        setSelectedRoom(total)
-    }
-
-    
 
     return <>
         <div id='header-title' className='text-center mt-10'>
