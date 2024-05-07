@@ -45,8 +45,10 @@ export const Fotter = () => {
                             <li className='pt-1'>
                                 <FontAwesomeIcon size='2x' color='white' icon={faLocationDot} />
                                 <span className='ml-2'>
+                                    <a href={`https://www.google.com/maps?q=${15.0327380},${-91.0291750}`}>
                                     Chinique las flores santa cruz del Quiche en la entrada de potrero viejo
                                     Kilómetro 181
+                                    </a>
                                 </span>
                             </li>
                         </ul>
