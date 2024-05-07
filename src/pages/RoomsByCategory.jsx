@@ -68,7 +68,7 @@ export const RoomsByCategory = () => {
                                     dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700`
                 }
             >
-                <FontAwesomeIcon size='2xs' color='white' icon={faArrowLeft} /> <a href="/auto-hotel/">Regresar </a>
+                <FontAwesomeIcon size='2xs' color='white' icon={faArrowLeft} /> <a href="/">Regresar </a>
             </button>
         </div>
     </>

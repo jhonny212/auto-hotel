@@ -40,7 +40,7 @@ export const Room = () => {
                                     dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700`
                 }
             >
-                <FontAwesomeIcon size='2xs' color='white' icon={faArrowLeft} /> <a href={`/auto-hotel/rooms/${type}`}>Regresar </a>
+                <FontAwesomeIcon size='2xs' color='white' icon={faArrowLeft} /> <a href={`/rooms/${type}`}>Regresar </a>
             </button>
         </div>
     </>
