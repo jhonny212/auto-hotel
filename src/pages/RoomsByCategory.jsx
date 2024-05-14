@@ -36,30 +36,6 @@ export const RoomsByCategory = () => {
             </>
         })}
 
-
-
-        {/* <div className='flex items-center justify-center'>
-            <div id='root-container-carousel' className='m-10 w-9/12  xl:w-5/12 lg:w-7/12 2xl:w-8/12'>
-                <Carousel className='h-[250px] md:h-[400px] xl:h-[520px] lg:h-[400px] 2xl:h-[580px]' onchangeImage={onChangeImage} images={images} redirectImage={false} />
-            </div>
-        </div> */}
-
-        {/* <div className='grid grid-cols-2 gap-4'>
-            <div className='beneficios p-2 text-center'>
-                <h2 className="mb-2 lg:text-4xl text-3xl font-semibold text-gray-100 dark:text-white">Beneficios</h2>
-                <div className='flex justify-center'>
-                    <ul className="text-2xl space-y-4 text-left text-gray-200 ">
-                        <li className="flex items-center space-x-3 rtl:space-x-reverse">
-                            <svg className="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5" />
-                            </svg>
-                            <span>Q{detailRoom[selectedRoom]?.price} Por hora</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div> */}
-
         <div className='p-10 mt-10'>
             <button type="button"
                 className={

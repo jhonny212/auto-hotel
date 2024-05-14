@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { useParams } from 'react-router-dom'
 import info from '../assets/roomsInfo.json'
-import fs from 'fs'
 
 export const Room = () => {
 
@@ -17,6 +16,7 @@ export const Room = () => {
             return `/${type}/Habitación_${id}/${e}`
         })
         setImages(newImages)
+        window.scrollTo(0, 0);
     }, [])
 
 
