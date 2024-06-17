@@ -51,7 +51,7 @@ export const Home = () => {
                         <h2 className="lg:text-5xl text-3xl my-2 font-semibold text-white">Ubicación</h2>
                         <ul className="space-y-4 text-lg  flex items-center justify-center text-white">
                             <li className="flex text-2xl items-center space-x-3 rtl:space-x-reverse">
-                                <a href={`https://www.google.com/maps?q=${15.0327380},${-91.0291750}`}>
+                                <a href={`https://www.google.com/maps/place/Auto+Hotel+Momentos+Magicos/@15.0325901,-91.0293132,21z/data=!4m12!1m5!3m4!2zMTXCsDAxJzU3LjkiTiA5McKwMDEnNDUuMCJX!8m2!3d15.032738!4d-91.029175!3m5!1s0x858be3c49830b0e3:0x4c3b04f1bd62096f!8m2!3d15.0327405!4d-91.0291667!16s%2Fg%2F11vspj0dp1?entry=ttu`}>
                                 <span>Chinique las flores santa cruz del Quiche
                                     en la entrada de potrero viejo Kilómetro 181</span>
                                 </a>
@@ -179,7 +179,7 @@ export const Home = () => {
                 </div>
 
                 <div className='maps lg:p-5 mb-5 mx-10 h-[400px] md:h-[600px]  shadow-2xl'>
-                    <a href={`https://www.google.com/maps?q=${15.0327380},${-91.0291750}`}>
+                    <a href={`https://www.google.com/maps/place/Auto+Hotel+Momentos+Magicos/@15.0325901,-91.0293132,21z/data=!4m12!1m5!3m4!2zMTXCsDAxJzU3LjkiTiA5McKwMDEnNDUuMCJX!8m2!3d15.032738!4d-91.029175!3m5!1s0x858be3c49830b0e3:0x4c3b04f1bd62096f!8m2!3d15.0327405!4d-91.0291667!16s%2Fg%2F11vspj0dp1?entry=ttu`}>
                         <MapComponent lat={15.0327380} long={-91.0291750} />
                     </a>
                 </div>
