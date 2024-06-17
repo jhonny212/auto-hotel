@@ -3,13 +3,13 @@ import { faLocationDot, faClock, faBed, faGem, faCoins, faStar } from '@fortawes
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Carousel } from '../components/Carousel'
 import { MapComponent } from '../components/MapComponent'
-import room1 from '../assets/Frente/_MRM0022.png'
+import room1 from '../assets/Frente/_MRM0022.jpg'
 import room2 from '../assets/Frente/_MRM0025.png'
-import room3 from '../assets/Frente/_MRM0035.png'
-import room4 from '../assets/Frente/_MRM0041.png'
+import room3 from '../assets/Frente/_MRM0035.jpg'
+import room4 from '../assets/Frente/_MRM0041.jpg'
 import room5 from '../assets/Frente/_MRM0043.png'
-import room6 from '../assets/Frente/_MRM0045.png'
-import room7 from '../assets/Frente/_MRM0103.png'
+import room6 from '../assets/Frente/_MRM0045.jpg'
+import room7 from '../assets/Frente/_MRM0103.jpg'
 
 
 export const Home = () => {
